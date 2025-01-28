@@ -1,0 +1,36 @@
+@use '/src/styles/utils/variables.scss' as *;
+.button {
+  background-color: transparent; // Используем переменные из variables.scss
+  color: black;
+  font-weight: 600;
+  text-wrap: nowrap;
+  padding: 19px 25px 17px;
+  border-radius: 4px;
+  border: 1px solid $secondary-color;
+  cursor: url(/public/cursor.svg), auto;
+
+  &__icon {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px;
+  }
+
+  &__primary {
+    background-color: $primary-color;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: $secondary-color;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__secondary {
+    background-color: $secondary-color;
+    border-color: black;
+    // box-shadow: 0px 0px 30px $secondary-color;
+  }
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

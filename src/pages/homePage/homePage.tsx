@@ -20,10 +20,6 @@ export const HomePage: React.FC = () => {
   }, [isAuthenticated, navigate]);
 
   return (
-    <HomePageUI
-      title="Главная страница"
-      description="Добро пожаловать!"
-      handleLogin={handleLogin}
-    />
+    <HomePageUI description="Добро пожаловать!" handleLogin={handleLogin} />
   );
 };

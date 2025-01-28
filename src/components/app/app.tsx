@@ -8,6 +8,7 @@ export const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/profile" element={<ProfilePage />} />
+        {/* <Route path="*" element={<PageNotFound />} /> */}
       </Routes>
     </Router>
   );
