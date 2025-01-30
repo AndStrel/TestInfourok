@@ -1,6 +1,8 @@
 import { Button } from '@ui/button';
 import { HomePageUIProps } from './type';
 import style from './homePageUI.module.scss';
+import logo from '/src/assets/images/logo.svg';
+import image from '/src/assets/images/image.png';
 
 export const HomePageUI: React.FC<HomePageUIProps> = ({
   handleLogin,
@@ -11,7 +13,7 @@ export const HomePageUI: React.FC<HomePageUIProps> = ({
       <header className={style.header}>
         <div className={style.logoContainer}>
           <div className={style.logoContainer__logo}>
-            <img src="/src/assets/images/logo.svg" alt="Logo" />
+            <img src={logo} alt="Logo" />
           </div>
           <div className={style.logoContainer__title}>
             <h3>Логотип</h3>
@@ -110,11 +112,7 @@ export const HomePageUI: React.FC<HomePageUIProps> = ({
         </div>
         <div className={style.main__right}>
           <div className={style.container__image}>
-            <img
-              src="/src/assets/images/image.png"
-              alt="Studets"
-              className={style.picture}
-            />
+            <img src={image} alt="Studets" className={style.picture} />
           </div>
         </div>
       </section>
