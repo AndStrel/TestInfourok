@@ -17,7 +17,7 @@
 
   &__primary {
     position: relative;
-    bottom:  2px;
+    bottom: 2px;
     right: 2px;
 
     background-color: $primary-color;
@@ -36,7 +36,7 @@
     box-shadow:
       0px 0px 30px $secondary-color,
       inset 0px -2px 2px 0px rgba(0, 0, 0, 0.25);
-      transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     &:hover {
       background-color: $secondary-color-hover;
       box-shadow: inset 0px -2px 2px 0px rgba(0, 0, 0, 0.25);
@@ -44,7 +44,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 768px) {
   .button {
