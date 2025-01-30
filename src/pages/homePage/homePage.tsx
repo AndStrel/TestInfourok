@@ -12,6 +12,10 @@ export const HomePage: React.FC = () => {
   const handleLogin = () => {
     dispatch(login({ name: 'Sebastian', email: 'Sebastian@mail.ru' }));
   };
+
+  const goVisit = () => {
+    window.open('https://andstrelnikov.ru');
+  };
   // Если пользователь уже авторизован, перенаправляем его на страницу профиля
   useEffect(() => {
     if (isAuthenticated) {
@@ -19,7 +23,5 @@ export const HomePage: React.FC = () => {
     }
   }, [isAuthenticated, navigate]);
 
-  return (
-    <HomePageUI description="Добро пожаловать!" handleLogin={handleLogin} />
-  );
+  return <HomePageUI handleLogin={handleLogin} goVisit={goVisit} />;
 };
